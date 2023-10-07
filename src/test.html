@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      .dot{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: red;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    
+  </body>
+  <script>
+    document.addEventListener("touchstart",(e)=>{
+      [...e.changedTouches].forEach(touch=>{
+        const dot=document.createElement("div")
+        dot.classList.add("dot")
+        dot.style.top=`${touch.pagey}px`
+        dot.style.left=`${touch.pageX}px`
+        dot.id=touch.identifier
+        document.body.append(dot)
+      })
+    })
+    document.addEventListener("touchmove",(e)=>{
+      [...e.changedTouches].forEach(touch=>{
+        const dot=document.getElementById(touch.identifier)
+        dot.style.top=`${touch.pageY}px`
+        dot.style.left=`${touch.pageX}px`
+      })
+    })
+    document.addEventListener("touchend",(e)=>{
+      [...e.changedTouches].forEach(touch=>{
+        const dot=document.getElementById(touch.identifier)
+        dot.remove()
+      })
+    })
+    </script>
+</html>

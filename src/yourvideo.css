@@ -1,0 +1,17 @@
+.yvideo{
+    width: 200px;
+    height: 300px;
+    position: static;
+    margin: 30px;
+}
+.tvideo #videos{
+    width: 1400px;
+    height: max-content;
+    margin-left: 30%;
+    margin-top: -4%;
+}
+.tvideo #videos h1{
+    font-size: 150px;
+    color: red;
+    font-weight: 500;
+}

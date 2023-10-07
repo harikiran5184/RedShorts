@@ -1,0 +1,43 @@
+.settings .account{
+    width: 400px;
+    height: 300px;
+    background-color: red;
+    position: fixed;
+    top: 35%;
+    left: 42%;
+    border-radius: 50px;
+}
+.settings .account input{
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.settings .account label{
+    font-size: 25px;
+}
+.settings .account h1{
+    font-size: 40px;
+    color: white;
+}
+.settings h1{
+    font-size: 100px;
+    color: red;
+}
+.settings .account input[type="submit"]{
+    height: 40px;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    outline: none;
+    border: none;
+    transition-duration: .8s;
+}
+.settings .account input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+    transition-duration: .8s;
+
+}

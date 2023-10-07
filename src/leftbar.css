@@ -1,0 +1,125 @@
+.leftbar button{
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 20px;
+}
+.leftbar button:hover{
+    background-color: white;
+    color: red;
+}
+.leftbar{
+    width: 300px;
+    background-color: red;
+    padding-right: 50px;
+    border-radius: 50px;
+    position: fixed;
+    top: 25%;
+    left: 0px;
+}
+ .sliderbtn{
+    width: 100px;
+    height: 100px;
+    border-radius: 0px 0px 100px 100px;
+    position: fixed;
+    left: 350px;
+    top: 50%;
+    padding: 0px;
+    margin: 0;
+    rotate: 270deg;
+    display: none;
+}
+ .sliderbtn h1{
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#upload{
+    font-size: 40px;
+}
+@media screen and (max-width:600px) {
+    .leftbar{
+        position: fixed;
+        width: 100px;
+        left: -200px;
+    }
+    .leftbar button{
+        width: 100px;
+        font-size: smaller;
+        height: 70px;
+        padding-top: 0;
+    }
+    .sliderbtn{
+        display: inline;
+        left: 0px;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px 50px 0px 0px;
+        rotate: 90deg;
+    }
+    .sliderbtn h1{
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .title{
+        min-width: 100px;
+        width: 100px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        margin: 0;
+        padding: 0px 5px 0px 5px;
+        font-size: 9px;
+        border-radius: 100px;
+        animation: ani1 1s alternate infinite;
+        transition-duration: .9s;
+    }
+    .title:hover{
+        max-width: 97%;
+        width: 97%;
+        transition-duration: .9s;
+    }
+    @keyframes ani1{
+        from{
+            background-color: red;
+            color: white;
+        }
+        to{
+            background-color: white;
+            color: red;
+        }
+    }
+    .leftbar #upload{
+        font-size: 20px;
+    }
+    
+}
+.man{
+    width:500px;
+          height:500px;
+          background-color:rgb(0, 0, 0);
+          position:fixed;
+          top:35%;
+          left:40%;
+          border-radius:3%;
+          transform:skewx(0deg);
+          box-shadow: 1px 1px 100px red;
+          transition-duration: 1s;
+          z-index: -1;
+        }
+.man:hover{
+    transform: skewX(-1deg);
+    transition-duration: 1s;
+}
+.man button{
+    background-color: red;
+    color: white;
+}
+.man button:hover{
+    background-color: black;
+    color: red;
+}
+  

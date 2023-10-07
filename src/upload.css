@@ -1,0 +1,19 @@
+@media screen and (max-width : 600px) {
+    .man {
+        top: 35%;
+        left: 14%;
+        width: 350px;
+        box-shadow: 1px 1px 20px red;
+    }
+  }
+.man{
+    background-color: black;
+}
+.man button{
+    border-Radius:10px;
+    width:max-content;
+    height:max-content;
+    padding:10px;
+    font-Size:40px;
+    margin-Top:60px;
+}
